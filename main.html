@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- import typescript and css here -->
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" defer="defer" src="ts/event_handler.js"></script>
+		<script type="text/javascript" defer="defer" src="ts/program_state.js"></script>
+		<script type="text/javascript" defer="defer" src="ts/parser.js"></script>
+	</head>
+
+	<body>
+		<title> Surface CRN Simulator </title>
+
+		<div class="main_grid grid">
+			<!-- header containing some options and simulation control -->
+			<header class="grid">
+				<nav class="grid">
+					<h2 class="grid title">
+						Surface CRN Simulator
+					</h2>
+					<h4 class="grid simulator_options">
+						(sim options)
+					</h4>
+					<h4 class="grid simulator_controls">
+						(sim controls)
+					</h4>
+				</nav>
+			</header>
+			<!-- Visualisation of the initial state and simulation -->
+			<div class="grid panel state_panel">
+				<h3 class="panel_header"> Initial State </h3>
+			</div>
+			<!-- The list of rules to edit -->
+			<div class="grid panel rules_panel">
+				<h3 class="panel_header"> Transition Rules </h3>
+				
+				<div id="rule_container">
+					<table id="rule_list">
+						
+					</table>
+				</div>
+			</div>
+			
+			<!-- Options for execution -->
+			<div class="grid panel options_panel">
+				<h3> Simulator Options </h3>
+				
+			</div>
+			
+			<!-- Colour mapping -->
+			<div class="grid panel colour_panel">
+				<h3> Colour Mapping </h3>
+				
+				<div id="colour_container">
+					<table id="colour_list">
+						
+					</table>
+				</div>
+			</div>
+
+			<!-- Import/export section -->
+			<div class="grid panel import_export_panel">
+				<h3> Import/Export </h3>
+				<div>
+					<input type="file" id="import_input" multiple="multiple"> <button type="submit" id="import_submit"> Import </button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
